@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            var lastday;
+            var month;
+            month=prompt('달을 입력해주세요');
+            if(month<1||month>12)
+            {
+                document.write("존재하지 않는 달입니다.");
+            }
+            else
+            {
+                switch(month)
+                {
+                    case '1': case '3': case '5': case '7': case '8': case '10': case '12':
+                        lastday=31;
+                        break;
+                    case '2':
+                        lastday=28;
+                        break;
+                    case '4': case '6': case '9': case '11':
+                        lastday=30;
+                        break;
+                }
+                document.write(month + "월의 마지막 날은" + lastday + "입니다.");
+            }
+        </script>
+    </body>
+</html>
