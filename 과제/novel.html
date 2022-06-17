@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <style>
+            ul {list-style: none; background: rgb(74, 206, 249); margin: 0; padding: 0;}
+            a {color: white; text-decoration: none; font-size: 18px;}
+            a:hover {font-weight: bold; color: royalblue;}
+
+            .menu { }
+            .menu > li {display: inline-block; position: relative; width: 150px; padding: 5px 10px; text-align: center;}
+            .menu > li > a {display: block; }
+            .menu > li .sub {display: none; position: absolute; width: 150px; padding-top: 10px; padding-bottom: 10px;}
+            .menu > li:hover .sub {display: block;}
+            .title {font-size: 20px; margin-left: 20px; color: royalblue; font-weight: bold;}
+
+            .novel-box { width: 40%; float: left; padding: 20px;}
+            .iframe-box {width: 50%; float: right; padding: 20px;}
+            .novel {font-weight: bold; color: royalblue;}
+            .bold {font-weight: bold;}
+        </style>
+    </head>
+    <body>
+        <!--메뉴-->
+        <nav>
+            <ul class="menu">
+                <li class="title">박수민의 홈페이지</li>
+                <li><a href="index.html">home</a></li>
+                <li><a href="#">about me</a>
+                    <ul class="sub">
+                        <li><a href="profile.html">프로필</a></li>
+                        <li><a href="schedule.html">시간표</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">hobby</a>
+                    <ul class="sub">
+                        <li><a href="cook.html">요리</a></li>
+                        <li><a href="music.html">음악</a></li>
+                        <li><a href="game.html">게임</a></li>
+                        <li><a href="novel.html">소설</a></li>
+                    </ul>
+                </li>
+                <li><a href="github.html">github</a></li>
+            </ul>
+        </nav>
+        <div class="novel-box">
+            <!--음악 플레이리스트-->
+            <h3>소설 추천 코너</h3>
+            <h4>최근에 제가 재미있게 읽고 있는 소설을 소개하겠습니다.</h4>
+            <p></p>
+            <h4>소설의 제목을 누르시면 iframe 창으로 소설 사이트가 연결됩니다.</h4>
+            <p>첫 번째 소설: <a href="https://series.naver.com/novel/detail.series?productNo=4130558" class="novel" target="right">화산귀환</a></p>
+            <p>소개 문구:<br><br> 대 화산파 13대 제자, 천하삼대검수 매화검존 청명. <br>
+            천하를 혼란에 빠뜨린 고금제일마 천마의 목을 치고 십만대산의 정상에 영면. 
+            <br>백 년의 시간을 뛰어넘어 아이의 몸으로 다시 살아나다. 그런데 ... ... </p>
+            <p class="bold">"뭐? 화산이 망해? 이게 뭔소리야?!"</p>
+            <p></p>
+            <p>망했으면 살려야 하는 게 인지상정.<br>
+            "망해? 내가 있는데? 누구 맘대로!"<br>
+            언제고 매화는 지기 마련. 하지만 시린 겨울이 지나고 봄이 오면 매화는 다시 만산에 흐드러지게 피어난다</p>
+            <p></p>
+            <p class="bold">쫄딱 망해 버린 화산파를 살리기 위한 매화검존 청명의 고군분투가 시작된다!</p>
+            <p></p>
+            <p></p><br>
+            <p>두 번째 소설: <a href="https://series.naver.com/novel/detail.series?productNo=8063866" class="novel" target="right">어두운 바다의 등불이 되어</a></p>
+            <p>소개 문구:<br></p>
+            <p class="bold">3000m 아래 해저기지에 입사한지 닷새만에 물이 샌다고?</p>
+            <p>위의 소설 소개 문구가 상당히 짧은 관계로 좀 더 설명하자면 <br>주인공 박무현이 3000m 아래 해저기지에 치과의사로 입사한지 닷새만에 물이 샜다.<br>
+             박무현을 비롯해 여러 사람들과 해저기지를 탈출해내는 내용이다.</p>
+            <p style="color: rgba(255, 0, 0, 0.668);">Trigger Warning:<br>
+            위의 소설에는 심해, 폐쇄, 사이비, 학살, 유혈, 테러, 등의 키워드가 있으므로 이에 해당하는 키워드를 보지 못하시는 분은 주의하시길 바랍니다. </p>
+        </div>
+        <div class="iframe-box">
+            <iframe src="novel-if.html" width="640" height="640" name="right"></iframe>
+        </div>
+    </body>
+</html>

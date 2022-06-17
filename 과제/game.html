@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <style>
+            ul {list-style: none; background: rgb(74, 206, 249); margin: 0; padding: 0;}
+            a {color: white; text-decoration: none; font-size: 18px;}
+            a:hover {font-weight: bold; color: royalblue;}
+
+            .menu { }
+            .menu > li {display: inline-block; position: relative; width: 150px; padding: 5px 10px; text-align: center;}
+            .menu > li > a {display: block; }
+            .menu > li .sub {display: none; position: absolute; width: 150px; padding-top: 10px; padding-bottom: 10px;}
+            .menu > li:hover .sub {display: block;}
+            .title {font-size: 20px; margin-left: 20px; color: royalblue; font-weight: bold;}
+
+
+            .game-box { width: 40%; float: left; padding: 20px;}
+            .video-box {width: 50%; float: right; padding: 20px;}
+            .span {font-weight: bold; color: royalblue;}
+        </style>
+    </head>
+    <body>
+        <nav>
+            <ul class="menu">
+                <li class="title">박수민의 홈페이지</li>
+                <li><a href="index.html">home</a></li>
+                <li><a href="#">about me</a>
+                    <ul class="sub">
+                        <li><a href="profile.html">프로필</a></li>
+                        <li><a href="schedule.html">시간표</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">hobby</a>
+                    <ul class="sub">
+                        <li><a href="cook.html">요리</a></li>
+                        <li><a href="music.html">음악</a></li>
+                        <li><a href="game.html">게임</a></li>
+                        <li><a href="novel.html">소설</a></li>
+                    </ul>
+                </li>
+                <li><a href="github.html">github</a></li>
+            </ul>
+        </nav>
+        <!--게임 소개-->
+        <div class="game-box">
+            <h3>게임 소개</h3>
+            <h4>제가 가장 재미있게 플레이했던 게임을 소개하겠습니다.&nbsp;</h4>
+            <p><span class="span">젤다의 전설-야생의 숨결</span>: <br> 이 게임은 닌텐도가 개발한 오픈 월드 액션 어드벤처 게임으로,
+            본가 젤다의 전설 시리즈의 19번째 작품입니다. 이 게임은 Wii U와 닌텐도 스위치로 발매됐습니다.</p><br>
+            <p><span class="span">게임 스토리의 간략한 요약</span>: <br> 100년 전, 재앙 가논이 부활하여 하이랄 성을 덮쳤다.  
+            각 종족을 대표하는 영걸들과 공주인 젤다, 용사인 링크가 가논을 저지하려 했으나 강력한 가논의 힘 앞에 링크를 제외한 모든 영걸이 전사하고 링크마저 큰 부상을 입고만다. 
+            그 후 공주는 자신의 힘으로 가논을 하이랄성에 봉인한다. 그렇게 100년이 지난 어느 날, 링크는 기억이 잃은 채로 의문의 장소에서 눈을 떴다.</p><br>
+            <p><span class="span">게임의 콘텐츠 소개</span>: <br>
+            이 게임에서는 맵에 돌아다니는 몬스터들을 잡을 수 있습니다.<br> 오른쪽의 영상은 실제로 제가 플레이한 영상이며, 본인의 실력과 창의력에 따라 몬스터를 여러 방법으로 잡을 수 있습니다.
+            <br>그에 대한 예시로 몬스터를 몇 초간 멈추게 할 수 있는 타임록 능력을 연계하거나 자석 능력으로 물체를 움직여 몬스터를 손쉽게 잡을 수 있습니다.</p>
+            <p>다음으로는 게임의 스토리를 진행하며 보스들을 만나 전투를 할 수 있습니다. 각 보스들을 공격 패턴이 있으므로 싸우면서 그 패턴을 파악하고 그에 맞춰 적절한 공격을 넣으면 솝쉽게 클리어할 수 있습니다.</p>
+            <p>다음 콘텐츠는 사당을 찾아내는 콘텐츠입니다. 사당은 퀴즈를 풀어내는 곳인데 각 사당마다 퀴즈의 내용이 다르기 때문에 새로운 퀴즈를 풀며 재미를 느낄 수 있습니다. <br>
+            어떻게 푸는지 잘 모르면 그에 대한 공략 영상을 참고하는 것도 좋은 방법입니다.</p>
+            <p>사당 내에서는 여러 퀴즈들이 있는데 이 퀴즈를 풀면 사당 공략이 완료됩니다. 퀴즈에는 자이로 시스템을 적용하여 풀어내는 법도 있으며, 물건 끼워맞추기 등 여러 퀴즈들이 존재합니다.</p>
+            <P>마지막으로 게임 맵 내에 곳곳에 작은 퍼즐들이 존재합니다. 맵을 돌아다니며 발견하면 퀴즈를 풀어내는 소소한 재미를 느낄 수 있습니다.</P>
+        </div>
+        <div class="video-box">
+            <p></p>
+            <p><span class="span">몬스터 잡는 영상</span></p>
+            <video src="./game/몬스터잡기.mp4" controls width="400" height="225"></video><br><br>
+            <p><span class="span">보스 잡는 영상</span></p>
+            <video src="./game/중간보스.mp4" controls width="400" height="225"></video><br><br>
+            <p><span class="span">사당 찾아내는 영상</span></p>
+            <video src="./game/사당찾기.mp4" controls width="400" height="225"></video><br><br>
+            <p><span class="span">사당 내 퀴즈 영상</span></p>
+            <video src="./game/사당.mp4" controls width="400" height="225"></video><br><br>
+            <p><span class="span">작은 퍼즐 영상</span></p>
+            <video src="./game/작은퍼즐.mp4" controls width="400" height="225"></video><br><br>
+        </div>
+    </body>
+</html>

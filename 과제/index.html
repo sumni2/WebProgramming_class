@@ -2,8 +2,56 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <style>
+            ul {list-style: none; margin: 0; padding: 0;}
+            a { color: white; text-decoration: none; font-size: 18px; text-align: center;}
+            a:hover {font-weight: bold; color: royalblue;}
+
+            .menu { }
+            .menu > li {background: rgb(74, 206, 249); display: inline-block; position: relative; width: 150px; padding: 5px 20px 5px 10%; text-align: center; border: 10px solid white; margin: 10px;}
+            .menu > li > a {display: block; }
+            .menu > li .sub { display: none; position: absolute; width: 150px; padding-top: 10px; padding-bottom: 10px;}
+            .menu > li:hover .sub { display: block;}
+            .sub > li {background: rgb(135, 224, 254);}
+            .title {font-size: 20px; margin-left: 20px; color: royalblue; font-weight: bold;}
+            .park {text-align: center;}
+
+            .animation {animation-name: heart; animation-duration: 3s; animation-timing-function: linear; animation-iteration-count: infinite; animation-play-state: running; }
+            @keyframes heart { 0%{transform: rotateY(30deg);} 20%{transform: rotateY(60deg);} 40%{transform: rotateY(90deg);} 60%{transform: rotateY(120deg);} 80%{transform: rotateY(150deg);} 100%{transform: rotateY(180deg);}}
+
+            .water {padding: 0px 5px; opacity: 0.9;}
+
+        </style>
     </head>
     <body>
-        
+        <nav>
+            <div>
+                <div class="animation">
+                    <h2 class="park">&#128156;</h2>
+                </div>
+                <h2 class="park">Park Su Min</h2>
+            </div>
+            <div>
+                <img src="./img/water.jpeg" class="water" width="99%" height="300px">
+            </div>
+            <ul class="menu">
+                <li><a href="index.html">home</a></li>
+                <li><a href="#">about me</a>
+                    <ul class="sub">
+                        <li><a href="profile.html">프로필</a></li>
+                        <li><a href="schedule.html">시간표</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">hobby</a>
+                    <ul class="sub">
+                        <li><a href="cook.html">요리</a></li>
+                        <li><a href="music.html">음악</a></li>
+                        <li><a href="game.html">게임</a></li>
+                        <li><a href="novel.html">소설</a></li>
+                    </ul>
+                </li>
+                <li><a href="github.html">github</a></li>
+            </ul>
+        </nav>
     </body>
 </html>

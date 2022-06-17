@@ -1,8 +1,114 @@
 <!--취미1-->
 <!DOCTYPE html>
 <html>
-    <head></head>
+    <head>
+        <meta charset="utf-8">
+        <style>
+            ul {list-style: none; background: rgb(74, 206, 249); margin: 0; padding: 0;}
+            a {color: white; text-decoration: none; font-size: 18px;}
+            a:hover {font-weight: bold; color: royalblue;}
+
+            .menu { }
+            .menu > li {display: inline-block; position: relative; width: 150px; padding: 5px 10px; text-align: center;}
+            .menu > li > a {display: block; }
+            .menu > li .sub {display: none; position: absolute; width: 150px; padding-top: 10px; padding-bottom: 10px;}
+            .menu > li:hover .sub {display: block;}
+            .title {font-size: 20px; margin-left: 20px; color: royalblue; font-weight: bold;}
+
+            .div {padding: 20px;}
+            .dessert {font-weight: bold; color: royalblue;}
+        </style>
+    </head>
     <body>
-        
+        <!--메뉴바-->
+        <nav>
+            <ul class="menu">
+                <li class="title">박수민의 홈페이지</li>
+                <li><a href="index.html">home</a></li>
+                <li><a href="#">about me</a>
+                    <ul class="sub">
+                        <li><a href="profile.html">프로필</a></li>
+                        <li><a href="schedule.html">시간표</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">hobby</a>
+                    <ul class="sub">
+                        <li><a href="cook.html">요리</a></li>
+                        <li><a href="music.html">음악</a></li>
+                        <li><a href="game.html">게임</a></li>
+                        <li><a href="novel.html">소설</a></li>
+                    </ul>
+                </li>
+                <li><a href="github.html">github</a></li>
+            </ul>
+        </nav>
+        <!--디저트 레시피 소개-->
+        <div class="div">
+            <section>
+                <article>
+                    <h3>디저트 만들기</h3>
+                    <h4>제가 직접 만들어서 가족들과 자주 나눠먹는 디저트의 레시피를 소개하겠습니다</h4>
+                    <p></p>
+                    <h4>원하시는 디저트의 종류를 누르시면 완성된 디저트의 사진과 디저트의 레시피를 보실 수 있습니다</h4>
+                    <a href="#cookie" class="dessert">[초코칩 쿠키]</a>&nbsp;
+                    <a href="#muffin" class="dessert">[머핀]</a>&nbsp;
+                    <a href="#lemon" class="dessert">[레몬 파운드 케이크]</a>&nbsp;
+                    <a href="#scone" class="dessert">[플레인 스콘]</a>&nbsp;
+                    <p></p>
+                </article>
+            </section>
+            <p><a name="cookie"></a></p>
+            <img src="./dessert/쿠키.jpeg" width="400px" height="400px">
+            <p>재료: 무염버터 60g, 흑설탕 30g, 백설탕 20g, 계란 반개, 박력분 80g, 베이킹파우터 1티스푼, 초코칩 30g</p>
+            <p>1. 실온에 꺼내둔 버터를 풀어줍니다.</p>
+            <p>2. 풀어준 버터에 흑설탕과 백설탕을 모두 넣어 부드러워질때까지 섞어줍니다.</p>
+            <p>3. 적당히 섞은 후 미리 풀어둔 계란물을 넣어서 다시 섞어줍니다.</p>
+            <p>4. 다음으로 박력분과 베이킹파우더를 넣어 가로, 세로 모양으로 섞어줍니다.</p>
+            <p>5. 날 가루가 안 보이면 초코칩을 넣어서 조금만 섞어줍니다.</p>
+            <p>6. 반죽을 한 스쿱씩 퍼서 종이호일에 적당한 간격으로 배치합니다.</p>
+            <p>7. 에어프라이어에서 170도에 30분동안 구우면 완성됩니다.</p>
+            <a href="#top" class="dessert">[위로 이동]</a>
+            <p></p><br><br>
+            <p><a name="muffin"></a></p>
+            <img src="./dessert/머핀.jpeg" width="400px" height="500px">
+            <p>재료: 무염버터 90g, 설탕 60g, 계란 2개, 박력분 135g, 베이킹파우더 2g, 바닐라엑스트랙</p>
+            <p>1. 실온에 꺼내둔 버터를 풀어줍니다.</p>
+            <p>2. 버터에 설탕을 넣어 잘 섞어줍니다.</p>
+            <p>3. 미리 풀어둔 계란을 나눠서 넣으며 잘 섞어줍니다.</p>
+            <p>4. 다음으로 박력분과 베이킹파우더를 넣어 잘 섞어줍니다.</p>
+            <p>5. 취향에 따라 바닐라엑스트랙 한 방울을 넣거나 초코칩을 조금 넣어줍니다.</p>
+            <p>6. 머핀 유산지에 반죽을 유산지의 80%정도 채워줍니다. 다 채워준 뒤 내려치며 공기를 빼줍니다.</p>
+            <p>7. 에어프라이어에서 160도에 25분간 구우면 완성됩니다.</p>
+            <a href="#top" class="dessert">[위로 이동]</a>
+            <p></p><br><br>
+            <p><a name="lemon"></a></p>
+            <img src="./dessert/레몬파운드.jpeg" width="400px" height="400px">
+            <p>시트 재료: 무염버터 40g, 설탕 20g, 계란 1개, 박력분 40g, 베이킹파우더 1티스푼, 우유 10g, 레몬즙 10g, 레몬제스트 반개분량</p>
+            <p>아이싱 재료: 슈가파우더 30g, 레몬즙 5~10g</p>
+            <p>1. 레몬제스트를 갈아줍니다.</p>
+            <p>2. 레몬제스트를 다 갈았으면 레몬즙을 짜줍니다.</p>
+            <p>3. 다음으로 시트를 만들 차례입니다. 실온에 꺼내둔 버터를 잘 풀어줍니다.</p>
+            <p>4. 버터에 설탕을 섞은 뒤 다시 잘 섞어줍니다.</p>
+            <p>5. 미리 풀어둔 계란물을 두 번에 걸쳐서 나눠 넣은 뒤 잘 섞어줍니다.</p>
+            <p>6. 박력분과 베이킹파우더를 넣어서 잘 섞어줍니다.</p>
+            <p>7. 앞의 반죽이 거의 섞였을 때 우유, 레몬제스트, 레몬즙을 넣어서 섞어줍니다.</p>
+            <p>8. 구울 펜에 버터를 살짝 발라주고 그 위에 반죽을 부워줍니다. 이때 펜의 3분의 2정도 넣어주며 다 넣은 뒤에 펜을 내려쳐서 공기를 빼줍니다.</p>
+            <p>9. 에어프라이어에서 170도에 25분간 구우면 시트가 완성됩니다.</p>
+            <p>10. 반죽이 구워지는 동안 아이싱을 만듭니다. 슈가파우더와 레몬즙을 잘 섞어줍니다.</p>
+            <p>11. 잘 구워진 시트를 식혀주고 그 위에 아이싱을 올려줍니다. 다음으로 취향에 따라 데코를 해주면 완성입니다.</p>
+            <a href="#top" class="dessert">[위로 이동]</a>
+            <p></p><br><br>
+            <p><a name="scone"></a></p>
+            <img src="./dessert/스콘.jpeg" width="400px" height="500px">
+            <p>재료: 무염버터 30g, 설탕 15g, 계란 반개, 박력분 120g, 베이킹파우더 2g, 우유 30g</p>
+            <p>1. 박력분에 베이킹파우더와 설탕을 넣고 잘 섞어줍니다.</p>
+            <p>2. 작게 잘라둔 차가운 버터를 넣고 스크래퍼라는 도구로 버터가 가루가 되도록 잘게 잘라줍니다. 이때 버터는 녹으면 안되며 차가운 상태를 유지해야합니다.</p>
+            <p>3. 우유과 계란을 섞어둔 혼합물을 넣어서 섞어줍니다.</p>
+            <p>4. 가루가 안 보일 때 손으로 뭉쳐줍니다. 마찬가지로 버터가 녹으면 안되기 때문에 손이 닿는 시간이 짧아야합니다.</p>
+            <p>5. 뭉친 반죽을 밀봉하여 냉장고에서 30분 이상 휴지시켜줍니다.</p>
+            <p>6. 반죽을 모양을 잘 잡아 4등분 해줍니다.</p>
+            <p>7. 우유계란물을 반죽 위에 발라서 에어프라이어에서 180도에 30분간 구워주면 완성입니다.</p>
+            <a href="#top" class="dessert">[위로 이동]</a>
+        </div>
     </body>
 </html>

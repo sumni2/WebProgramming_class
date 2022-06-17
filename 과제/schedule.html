@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <style>
+            ul {list-style: none; background: rgb(74, 206, 249); margin: 0; padding: 0;}
+            a {color: white; text-decoration: none; font-size: 18px;}
+            a:hover {font-weight: bold; color: royalblue;}
+
+            .menu { }
+            .menu > li {display: inline-block; position: relative; width: 150px; padding: 5px 10px; text-align: center;}
+            .menu > li > a {display: block; }
+            .menu > li .sub {display: none; position: absolute; width: 150px; padding-top: 10px; padding-bottom: 10px;}
+            .menu > li:hover .sub {display: block;}
+            .title {font-size: 20px; margin-left: 20px; color: royalblue; font-weight: bold;}
+
+        </style>
+    </head>
+    <body>
+        <nav><!--메뉴-->
+            <ul class="menu">
+                <li class="title">박수민의 홈페이지</li>
+                <li><a href="index.html">home</a></li>
+                <li><a href="#">about me</a>
+                    <ul class="sub">
+                        <li><a href="profile.html">프로필</a></li>
+                        <li><a href="schedule.html">시간표</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">hobby</a>
+                    <ul class="sub">
+                        <li><a href="cook.html">요리</a></li>
+                        <li><a href="music.html">음악</a></li>
+                        <li><a href="game.html">게임</a></li>
+                        <li><a href="novel.html">소설</a></li>
+                    </ul>
+                </li>
+                <li><a href="github.html">github</a></li>
+            </ul>
+        </nav>
+        <!--1학기 시간표-->
+        <h4 style="color: white; font-weight: bold;">&ensp;<span style="background-color: deepskyblue;">&nbsp;2022년 1학기 시간표&nbsp;</span></h4>
+        <section>
+            <article>
+                <table border="1" style="width: 80%;">
+                    <tr>
+                        <th width="100" height="30"></th>
+                        <th width="100" height="30">월</th>
+                        <th width="100" height="30">화</th>
+                        <th width="100" height="30">수</th>
+                        <th width="100" height="30">목</th>
+                        <th width="100" height="30">금</th>
+                    </tr>
+                    <tr>
+                        <th rowspan="2" width="100" height="20">1교시</th>
+                        <td width="100" height="20"></td>
+                        <td width="100" height="20"></td>
+                        <th rowspan="6" width="100" height="20" style="background-color: lightcyan;">예술과 정신건강</th>
+                        <td width="100" height="20"></td>
+                        <td width="100" height="20"></td>
+                    </tr>
+                    <tr>
+                        <td width="100" height="20"></td>
+                        <td width="100" height="20"></td>
+                        <td width="100" height="20"></td>
+                        <th rowspan="5" width="100" height="20" style="background-color: lightcyan;">웹프로그래밍</th>
+                    </tr>
+                    <tr>
+                        <th rowspan="2" width="100" height="20">2교시</th>
+                        <td width="100" height="20"></td>
+                        <td width="100" height="20"></td>
+                        <td width="100" height="20"></td>
+                    </tr>
+                    <tr>
+                        <td width="100" height="20"></td>
+                        <td width="100" height="20"></td>
+                        <td width="100" height="20"></td>
+                    </tr>
+                    <tr><!--11시-->
+                        <th rowspan="2" width="100" height="20">3교시</th>
+                        <th rowspan="2" width="100" height="20" style="background-color: lightcyan;">C++</th>
+                        <th rowspan="2" width="100" height="20" style="background-color: lightcyan;">C++</th>
+                        <td width="100" height="20"></td>
+                    </tr>
+                    <tr><!--12시-->
+                        <td width="100" height="20"></td>
+                    </tr>
+                    <tr>
+                        <th rowspan="2" width="100" height="20">4교시</th>
+                        <td width="100" height="20"></td>
+                        <td width="100" height="20"></td>
+                        <td width="100" height="20"></td>
+                        <td width="100" height="20"></td>
+                        <td width="100" height="20"></td>
+                    </tr>
+                    <tr>
+                        <td width="100" height="20"></td>
+                        <td width="100" height="20"></td>
+                        <td width="100" height="20"></td>
+                        <td width="100" height="20"></td>
+                        <td width="100" height="20"></td>
+                    </tr>
+                    <tr>
+                        <th rowspan="2" width="100" height="20">5교시</th>
+                        <td width="100" height="20"></td>
+                        <td width="100" height="20"></td>
+                        <th rowspan="6" width="100" height="20" style="background-color: lightcyan;">확률과 통계</th>
+                        <td width="100" height="20"></td>
+                        <td width="100" height="20"></td>
+                    </tr>
+                    <tr>
+                        <td width="100" height="20"></td>
+                        <td width="100" height="20"></td>
+                        <td width="100" height="20"></td>
+                        <td width="100" height="20"></td>
+                    </tr>
+                    <tr><!--2시-->
+                        <th rowspan="2" width="100" height="20">6교시</th>
+                        <td width="100" height="20"></td>
+                        <td width="100" height="20"></td>
+                        <td width="100" height="20"></td>
+                        <td width="100" height="20"></td>
+                    </tr>
+                    <tr>
+                        <th rowspan="2" width="100" height="20" style="background-color: lightcyan;">리눅스</th>
+                        <th rowspan="5" width="100" height="20" style="background-color: lightcyan;">자료구조</th>
+                        <td width="100" height="20"></td>
+                        <th rowspan="2" width="100" height="20" style="background-color: lightcyan;">리눅스</th>
+                    </tr>
+                    <tr>
+                        <th rowspan="2" width="100" height="20">7교시</th>
+                        <td width="100" height="20"></td>
+                    </tr>
+                    <tr><!--3시 30분-->
+                        <td width="100" height="20"></td>
+                        <td width="100" height="20"></td>
+                        <td width="100" height="20"></td>
+                    </tr>
+                    <tr>
+                        <th rowspan="2" width="100" height="20">8교시</th>
+                        <td width="100" height="20"></td>
+                        <td width="100" height="20"></td>
+                        <td width="100" height="20"></td>
+                        <td width="100" height="20"></td>
+                    </tr>
+                    <tr>
+                        <td width="100" height="20"></td>
+                        <td width="100" height="20"></td>
+                        <td width="100" height="20"></td>
+                        <td width="100" height="20"></td>
+                    </tr>
+                </table>
+            </article>
+        </section>
+        <br><br><!--여름계절학기 시간표-->
+        <h4 style="color: white; font-weight: bold;">&ensp;<span style="background-color: deepskyblue;">&nbsp;2022년 여름학기 시간표&nbsp;</span></h4>
+        <section>
+            <article>
+                <table border="1" style="width: 80%;">
+                    <tr>
+                        <th width="100" height="30"></th>
+                        <th width="100" height="30">월</th>
+                        <th width="100" height="30">화</th>
+                        <th width="100" height="30">수</th>
+                        <th width="100" height="30">목</th>
+                        <th width="100" height="30">금</th>
+                    </tr>
+                    <tr>
+                        <th width="100" height="20">1교시</th>
+                        <td width="100" height="20"></td>
+                        <td width="100" height="20"></td>
+                        <td width="100" height="20"></td>
+                        <td width="100" height="20"></td>
+                        <td width="100" height="20"></td>
+                    </tr>
+                    <tr>
+                        <th width="100" height="20">2교시</th>
+                        <td width="100" height="20"></td>
+                        <td width="100" height="20"></td>
+                        <td width="100" height="20"></td>
+                        <td width="100" height="20"></td>
+                        <td width="100" height="20"></td>
+                    </tr>
+                    <tr>
+                        <th width="100" height="20">3교시</th>
+                        <td width="100" height="20"></td>
+                        <td width="100" height="20"></td>
+                        <td width="100" height="20"></td>
+                        <td width="100" height="20"></td>
+                        <td width="100" height="20"></td>
+                    </tr>
+                    <tr>
+                        <th width="100" height="20">4교시</th>
+                        <td width="100" height="20"></td>
+                        <td width="100" height="20"></td>
+                        <td width="100" height="20"></td>
+                        <td width="100" height="20"></td>
+                        <td width="100" height="20"></td>
+                    </tr>
+                    <tr>
+                        <th width="100" height="20">5교시</th>
+                        <td width="100" height="20"></td>
+                        <td width="100" height="20"></td>
+                        <td width="100" height="20"></td>
+                        <td width="100" height="20"></td>
+                        <td width="100" height="20"></td>
+                    </tr>
+                    <tr>
+                        <th width="100" height="20">6교시</th>
+                        <th rowspan="5" width="100" height="20" style="background-color: lightcyan;">이산수학</th>
+                        <th rowspan="5" width="100" height="20" style="background-color: lightcyan;">이산수학</th>
+                        <th rowspan="5" width="100" height="20" style="background-color: lightcyan;">이산수학</th>
+                        <th rowspan="5" width="100" height="20" style="background-color: lightcyan;">이산수학</th>
+                        <th rowspan="3" width="100" height="20" style="background-color: lightcyan;">이산수학</th>
+                    </tr>
+                    <tr>
+                        <th width="100" height="20">7교시</th>
+                    </tr>
+                    <tr>
+                        <th width="100" height="20">8교시</th>
+                    </tr>
+                    <tr>
+                        <th width="100" height="20">9교시</th>
+                        <td width="100" height="20"></td>
+                    </tr>
+                    <tr>
+                        <th width="100" height="20">10교시</th>
+                        <td width="100" height="20"></td>
+                    </tr>
+                </table>
+            </article>
+        </section>
+    </body>
+</html>
